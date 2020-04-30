@@ -12,6 +12,7 @@ const FallWaring = name => () => import('@/views/Home/FallWaring/' + name)
 const CarsManagement = name => () => import('@/views/Home/CarsManagement/' + name)
 const DeviceManagement = name => () => import('@/views/Home/DeviceManagement/' + name)
 const AccountManagement = name => () => import('@/views/Home/AccountManagement/' + name)
+const Personnelmanagement = name => () => import('@/views/Home/Personnelmanagement/' + name)
 // const communitybuilding = name => () => import('@/views/communitybuilding/' + name)
 // const News = name => () => import('@/views/News/' + name)
 export default new Router({
@@ -43,12 +44,17 @@ export default new Router({
         //   name: 'MonitoringFence',
         //   component: RealTimeMonitor('MonitoringFence')
         // },
-        // 人员管理
         {
-          path: '/personManagement',
-          name: 'PersonManagement',
-          component: PersonManagement('PersonManagement')
+          path: '/Personnelmanagement',
+          name: 'Personnelmanagement',
+          component: Personnelmanagement('Personnelmanagement')
         },
+        // 人员管理
+        // {
+        //   path: '/personManagement',
+        //   name: 'PersonManagement',
+        //   component: PersonManagement('PersonManagement')
+        // },
         // 设备管理
         {
           path: '/deviceManagement',

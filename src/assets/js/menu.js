@@ -36,7 +36,7 @@ const menus = [
       },
       {
         title: '人员管理',
-        name: 'PersonManagement'
+        name: 'Personnelmanagement'
       },
       {
         title: '车辆管理',
